@@ -1,0 +1,1555 @@
+body {
+  background: url(imagens/Mask\ group.png) no-repeat;
+    margin: 0;
+    padding: 0;
+    background-color: #04000f;
+  padding: 0px;
+  background-size: contain;
+background-position: unset;
+max-width: 1920px;
+
+  }
+
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -50;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+header {
+  padding-top: 15px;
+  padding-left: 70px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.logo img {
+  max-height: 100px;
+  padding-left: 20px;
+}
+
+.bigmenu{
+  position: block;
+}
+.bigmenu ul {
+  list-style: none;
+  display: flex;
+}
+
+.bigmenu ul li {
+  margin-right: 60px;
+}
+
+.bigmenu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.hamburger {
+position: absolute;
+display: block;
+width: 45px;
+cursor: pointer;
+  margin-left: 74.5%;
+  margin-bottom: 20px;
+
+appearance: none;
+background: none;
+outline: none;
+border: none;
+  
+  z-index: 2;
+}
+.hamburger .bar, .hamburger:after, .hamburger:before {
+content: '';
+display: block;
+width: 100%;
+height: 4px;
+  border-radius: 4px;
+background-color: #FFF;
+margin: 6px 0px;
+transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.hamburger.is-active:after {
+transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.hamburger.is-active .bar {
+opacity: 0;
+}
+
+.mobile-nav {
+position: fixed;
+top: 0;
+left: 100%;
+width: 100%;
+height: 100svh;
+display: block;
+z-index: 98;
+background-color: rgba(6, 6, 12, 0.959);;
+padding-top: 120px;
+transition: 0.4s;
+  
+  z-index: 1;
+}
+
+.mobile-nav.is-active {
+left: 0;
+}
+
+.mobile-nav a {
+display: block;
+width: 100%;
+
+max-width: 200px;
+margin: 0 auto 16px;
+text-align: center;
+padding: 12px 16px;
+
+color: #FFF;
+text-decoration: none;
+  font-weight: 600; 
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  
+}
+
+.mobile-nav a:hover {
+color: #816bc0;
+}
+
+  .titleprim {
+    animation: fadeIn 5s;
+    top: 100px; /* Alterado para 10% */
+    font-size: 4vw; /* Alterado para 4vw (viewport width) para tornar responsivo */
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    font-family: "Zen Dots", sans-serif;
+  
+  }
+  
+  .titlesec {
+    animation: fadeIn 6s;
+    top: 70px; /* Alterado para 10% */
+    font-size: 1.5vw; /* Alterado para 2.5vw (viewport width) para tornar responsivo */
+    font-style: italic;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+ .title2 {
+top: 900px;
+font-size: 250%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+font-weight: bold;
+ }
+
+ .title22 {
+top: 870px;
+font-size: 150%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+ }
+
+ .title3 {
+  top: 1360px;
+  font-size: 250%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+font-weight: bold;
+ }
+
+ .title33 {
+  top: 1330px;
+  font-size: 150%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+ }
+
+ .title4 {
+  top: 1820px;
+  font-size: 250%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+font-weight: bold;
+ }
+
+ .title44 {
+  top: 1790px;
+  font-size: 150%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+ }
+
+ .title5 {
+  top: 2280px;
+  font-size: 250%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+font-weight: bold;
+ }
+
+ .title55 {
+  top: 2250px;
+  font-size: 150%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+ }
+
+ .title6 {
+  top: 2700px;
+  font-size: 250%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+font-weight: bold;
+ }
+
+ .title66 {
+  top: 2670px;
+  font-size: 150%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+ }
+
+ .title7 {
+  top: 3160px;
+  font-size: 250%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-weight: bold;
+font-family: "Ubuntu", sans-serif;
+ }
+
+ .title77 {
+  top: 3130px;
+  font-size: 150%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+ }
+
+ .title8 {
+  top: 3600px;
+  font-size: 250%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+font-weight: bold;
+ }
+
+ .title88 {
+  top: 3570px;
+  font-size: 150%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+ }
+
+ .title9 {
+  top: 4080px;
+  font-size: 250%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+font-weight: bold;
+ }
+
+ .title99 {
+  top: 4050px;
+  font-size: 150%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+ }
+
+ .title10 {
+  top: 4500px;
+  font-size: 250%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+font-weight: bold;
+ }
+
+ .title1010 {
+  top: 4470px;
+  font-size: 150%;
+color: #ffffff;
+position: relative;
+left: 220px;
+width: 35%;
+text-align: center;
+font-family: "Ubuntu", sans-serif;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .gif1 {
+  width: 120%;
+  max-width: 450px;
+  height: auto; 
+  position: absolute;
+  top: 45%;
+  left: 160%;
+  transform: translate(-50%, -50%);
+}
+
+.gif2 {
+  width: 120%;
+  max-width: 450px;
+  height: auto; 
+  position: absolute;
+  top: 45%;
+  left: 160%;
+  transform: translate(-50%, -50%);
+}
+
+.gif3 {
+  width: 120%;
+  max-width: 450px;
+  height: auto; 
+  position: absolute;
+  top: 45%;
+  left: 160%;
+  transform: translate(-50%, -50%);
+}
+
+.gif4 {
+  width: 120%;
+  max-width: 450px;
+  height: auto; 
+  position: absolute;
+  top: 45%;
+  left: 160%;
+  transform: translate(-50%, -50%);
+
+}
+
+.gif5 {
+  width: 120%;
+  max-width: 450px;
+  height: auto; 
+  position: absolute;
+  top: 45%;
+  left: 160%;
+  transform: translate(-50%, -50%);
+
+}
+
+.gif6 {
+  width: 120%;
+  max-width: 450px;
+  height: auto; 
+  position: absolute;
+  top: 45%;
+  left: 160%;
+  transform: translate(-50%, -50%);
+
+}
+
+.gif7 {
+  width: 120%;
+  max-width: 450px;
+  height: auto; 
+  position: absolute;
+  top: 45%;
+  left: 160%;
+  transform: translate(-50%, -50%);
+
+}
+
+.gif8 {
+  width: 120%;
+  max-width: 450px;
+  height: auto; 
+  position: absolute;
+  top: 45%;
+  left: 160%;
+  transform: translate(-50%, -50%);
+
+}
+
+.gif9 {
+  width: 120%;
+  max-width: 450px;
+  height: auto; 
+  position: absolute;
+  top: 45%;
+  left: 160%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+
+
+
+
+.button {
+  position: relative;
+  transition: 0.3s;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #1d1d1d;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 26%; /* Alterado para 80% */
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px auto; /* Alterado para 10px auto */
+  top: 50%; /* Mantido em porcentagem para ajustar em relação à altura do dispositivo */
+  left: 13%;
+  transform: translateX(-50%);
+}
+
+.button:hover {
+background-color: #3b326e;
+
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button2 {
+  
+  position: relative;
+  transition: 0.3s;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #1d1d1d;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 26%; /* Alterado para 80% */
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px auto; /* Alterado para 10px auto */
+  top: 50%; /* Mantido em porcentagem para ajustar em relação à altura do dispositivo */
+  left: 13%;
+  transform: translateX(-50%);
+  
+  
+  }
+ 
+  .button2:hover {
+    background-color: #3b326e;
+    
+    }
+
+    
+  .button2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button2:hover span {
+    padding-right: 25px;
+  }
+  
+  .button2:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+    .button3 {
+      position: relative;
+      transition: 0.3s;
+      justify-content: center;
+      text-decoration: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: #1d1d1d;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 20px;
+      padding: 15px;
+      width: 26%; /* Alterado para 80% */
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 10px auto; /* Alterado para 10px auto */
+      top: 50%; /* Mantido em porcentagem para ajustar em relação à altura do dispositivo */
+      left: 13%;
+      transform: translateX(-50%);
+  
+      
+      }
+     
+      .button3:hover {
+        background-color: #3b326e;
+        
+        }
+
+        .button3 span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .button3 span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .button3:hover span {
+          padding-right: 25px;
+        }
+        
+        .button3:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+      
+
+        .button4 {
+          position: relative;
+  transition: 0.3s;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #1d1d1d;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 26%; 
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px auto; 
+  top: 50%; 
+  left: 13%;
+  transform: translateX(-50%);
+          
+          
+          }
+         
+          .button4:hover {
+            background-color: #3b326e;
+            
+            }
+
+            .button4 span {
+              cursor: pointer;
+              display: inline-block;
+              position: relative;
+              transition: 0.5s;
+            }
+            
+            .button4 span:after {
+              content: '\00bb';
+              position: absolute;
+              opacity: 0;
+              top: 0;
+              right: -20px;
+              transition: 0.5s;
+            }
+            
+            .button4:hover span {
+              padding-right: 25px;
+            }
+            
+            .button4:hover span:after {
+              opacity: 1;
+              right: 0;
+            }
+          
+
+            
+        .button5 {
+          position: relative;
+  transition: 0.3s;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #1d1d1d;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 26%; 
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px auto; 
+  top: 50%; 
+  left: 13%;
+  transform: translateX(-50%);
+          
+          }
+         
+          .button5:hover {
+            background-color: #3b326e;
+            
+            }
+            .button5 span {
+              cursor: pointer;
+              display: inline-block;
+              position: relative;
+              transition: 0.5s;
+            }
+            
+            .button5 span:after {
+              content: '\00bb';
+              position: absolute;
+              opacity: 0;
+              top: 0;
+              right: -20px;
+              transition: 0.5s;
+            }
+            
+            .button5:hover span {
+              padding-right: 25px;
+            }
+            
+            .button5:hover span:after {
+              opacity: 1;
+              right: 0;
+            }
+          
+
+            
+      
+        .button6 {
+          position: relative;
+          transition: 0.3s;
+          justify-content: center;
+          text-decoration: none;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10px;
+          background-color: #1d1d1d;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 20px;
+          padding: 15px;
+          width: 26%; 
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 10px auto; 
+          top: 50%; 
+          left: 13%;
+          transform: translateX(-50%);
+
+          
+          
+          }
+
+          .button6:hover {
+            background-color: #3b326e;
+            
+            }
+
+        
+        .button6 span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .button6 span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .button6:hover span {
+          padding-right: 25px;
+        }
+        
+        .button6:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+      
+         
+          
+
+            
+       
+
+            
+        .button7 {
+          position: relative;
+          transition: 0.3s;
+          justify-content: center;
+          text-decoration: none;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10px;
+          background-color: #1d1d1d;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 20px;
+          padding: 15px;
+          width: 26%; 
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 10px auto; 
+          top: 50%; 
+          left: 13%;
+          transform: translateX(-50%);
+          
+          }
+
+          .button7:hover {
+            background-color: #3b326e;
+            
+            }
+
+          
+        .button7 span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .button7 span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .button7:hover span {
+          padding-right: 25px;
+        }
+        
+        .button7:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+      
+         
+
+
+.button8 {
+  position: relative;
+  transition: 0.3s;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #1d1d1d;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 26%; 
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px auto; 
+  top: 50%; 
+  left: 13%;
+  transform: translateX(-50%);
+
+}
+.button8:hover {
+   background-color: #3b326e;
+}
+
+.button8 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button8 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button8:hover span {
+  padding-right: 25px;
+}
+
+.button8:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.button9 {
+  position: relative;
+  transition: 0.3s;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #1d1d1d;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 26%; 
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px auto; 
+  top: 50%; 
+  left: 13%;
+  transform: translateX(-50%);                
+ }
+                 
+ .button9:hover {
+ background-color: #3b326e;
+}
+
+.button9 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button9 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button9:hover span {
+  padding-right: 25px;
+}
+
+.button9:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+footer .btn{
+  width: 95px;
+  height: 36px;
+  background: none;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 30%);
+  border-radius: 4px;
+  cursor: pointer;
+
+  color: rgba(255, 255, 255, 30%);
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: none;
+}
+.scroll-down {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 35px;
+  color: #c2c2c2;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  left: 940px;
+  top: 840px;
+
+}
+
+.scroll-down:hover {
+  color: #816bc0; 
+}
+
+/*Desktop e Tablet*/
+@media (min-width: 950px) {
+  .mobile-nav {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+}
+
+@media (max-width: 950px) {
+  header {
+      padding-top: 15px;
+      padding-left: 70px;
+      padding-right: 50px;
+      display: flex;
+     
+      justify-content: space-between;
+      align-items: center;
+    
+      font-family: "Ubuntu", sans-serif;
+      font-weight: none;
+      font-size: none;
+  }
+  .bigmenu{
+      display: none;
+    }
+  
+  #threeColumns{
+      font-size: 18px;
+  } 
+  .sizeImage{
+      width: 180px;
+      height: 180px;
+  }
+  
+  .size1{
+      font-size: 40px;
+  }
+  .size2{
+      font-size: 20px;
+  }
+  .size3{
+      font-size: 16px;
+  }
+  .reposition{
+      margin-top: -38px;
+  }
+
+
+}
+
+@media (max-width: 850px) {
+
+  .title1 {
+      font-size: 225%;
+       }
+  .title2 {
+      font-size: 115%;
+     
+  }
+
+  #threeColumns{
+      font-size: 18px;
+  } 
+  .sizeImage{
+      width: 160px;
+      height: 160px;
+  }
+
+  .size1{
+      font-size: 32px;
+  }
+  .size2{
+      font-size: 18px;
+  }
+  .size3{
+      font-size: 12px;
+  }
+  .reposition{
+      margin-top: -34px;
+  }
+}
+
+/*Phone*/
+@media (max-width: 630px){
+  .titleprim {
+    animation: fadeIn 5s;
+    top: 100px; 
+    font-size: 3vw; 
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    font-family: "Zen Dots", sans-serif;
+  
+  }
+  
+  .titlesec {
+    animation: fadeIn 6s;
+    top: 100px; 
+    font-size: 2vw; 
+    font-style: italic;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .title2 {
+    top: 720px;
+    font-size: 200%;
+    color: #ffffff;
+    position: relative;
+    left: 200px;
+    width: 35%;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+     }
+    
+     .title22 {
+    top: 990px;
+    font-size: 120%;
+    color: #ffffff;
+    position: relative;
+    left: 200px;
+    width: 35%;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+     }
+
+     .title3 {
+      top: 1120px;
+      font-size: 200%;
+      color: #ffffff;
+      position: relative;
+      left: 200px;
+      width: 35%;
+      text-align: center;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: bold;
+       }
+      
+       .title33 {
+      top: 1390px;
+      font-size: 120%;
+      color: #ffffff;
+      position: relative;
+      left: 200px;
+      width: 35%;
+      text-align: center;
+      font-family: "Ubuntu", sans-serif;
+       }
+
+       .title4 {
+        top: 1520px;
+        font-size: 200%;
+        color: #ffffff;
+        position: relative;
+        left: 200px;
+        width: 35%;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: bold;
+         }
+        
+         .title44 {
+        top: 1790px;
+        font-size: 120%;
+        color: #ffffff;
+        position: relative;
+        left: 200px;
+        width: 35%;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+         }
+
+         .title5 {
+          top: 1920px;
+          font-size: 200%;
+          color: #ffffff;
+          position: relative;
+          left: 200px;
+          width: 35%;
+          text-align: center;
+          font-family: "Ubuntu", sans-serif;
+          font-weight: bold;
+           }
+          
+           .title55 {
+          top: 2190px;
+          font-size: 120%;
+          color: #ffffff;
+          position: relative;
+          left: 200px;
+          width: 35%;
+          text-align: center;
+          font-family: "Ubuntu", sans-serif;
+           }
+
+           .title6 {
+            top: 2320px;
+            font-size: 200%;
+            color: #ffffff;
+            position: relative;
+            left: 200px;
+            width: 35%;
+            text-align: center;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: bold;
+             }
+            
+             .title66 {
+            top: 2590px;
+            font-size: 120%;
+            color: #ffffff;
+            position: relative;
+            left: 200px;
+            width: 35%;
+            text-align: center;
+            font-family: "Ubuntu", sans-serif;
+             }
+
+             .title7 {
+              top: 2720px;
+              font-size: 200%;
+              color: #ffffff;
+              position: relative;
+              left: 200px;
+              width: 35%;
+              text-align: center;
+              font-family: "Ubuntu", sans-serif;
+              font-weight: bold;
+               }
+              
+               .title77 {
+              top: 2990px;
+              font-size: 120%;
+              color: #ffffff;
+              position: relative;
+              left: 200px;
+              width: 35%;
+              text-align: center;
+              font-family: "Ubuntu", sans-serif;
+               }
+
+               .title8 {
+                top: 3120px;
+                font-size: 200%;
+                color: #ffffff;
+                position: relative;
+                left: 200px;
+                width: 35%;
+                text-align: center;
+                font-family: "Ubuntu", sans-serif;
+                font-weight: bold;
+                 }
+                
+                 .title88 {
+                top: 3390px;
+                font-size: 120%;
+                color: #ffffff;
+                position: relative;
+                left: 200px;
+                width: 35%;
+                text-align: center;
+                font-family: "Ubuntu", sans-serif;
+                 }
+                 .title9 {
+                  top: 3520px;
+                  font-size: 200%;
+                  color: #ffffff;
+                  position: relative;
+                  left: 200px;
+                  width: 35%;
+                  text-align: center;
+                  font-family: "Ubuntu", sans-serif;
+                  font-weight: bold;
+                   }
+                  
+                   .title99 {
+                  top: 3790px;
+                  font-size: 120%;
+                  color: #ffffff;
+                  position: relative;
+                  left: 200px;
+                  width: 35%;
+                  text-align: center;
+                  font-family: "Ubuntu", sans-serif;
+                   }
+                   
+                   .title10 {
+                    top: 3920px;
+                    font-size: 200%;
+                    color: #ffffff;
+                    position: relative;
+                    left: 200px;
+                    width: 35%;
+                    text-align: center;
+                    font-family: "Ubuntu", sans-serif;
+                    font-weight: bold;
+                     }
+                    
+                     .title1010 {
+                    top: 4190px;
+                    font-size: 120%;
+                    color: #ffffff;
+                    position: relative;
+                    left: 200px;
+                    width: 35%;
+                    text-align: center;
+                    font-family: "Ubuntu", sans-serif;
+                     }
+
+  header {
+      padding-top: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: none;
+      font-weight: none;
+      font-size: none;
+  }
+  
+  .logo img {
+      max-height: 100px;
+      padding-left: 0px;
+      padding-top: 5px;
+       }
+  
+  nav ul {
+      display: none;
+    }
+
+
+  .hamburger {
+      position: absolute;
+      display: block;
+      width: 45px;
+      cursor: pointer;
+      margin-left: 80%;
+      
+      appearance: none;
+      background: none;
+      outline: none;
+      border: none;
+      
+      z-index: 2;
+  }
+  .mobile-nav {
+      position: fixed;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100svh;
+      display: block;
+      z-index: 98;
+      background-color: rgba(6, 6, 12, 0.959);
+      padding-top: 120px;
+      transition: 0.4s;
+      
+      z-index: 1;
+  }
+
+  .gif1 {
+    width: 150%;
+    max-width: 350px;
+    height: auto; 
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .gif2 {
+    width: 150%;
+    max-width: 350px;
+    height: auto; 
+    position: absolute;
+    top:-150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .gif3 {
+    width: 150%;
+    max-width: 350px;
+    height: auto; 
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .gif4 {
+    width: 150%;
+    max-width: 550px;
+    height: auto; 
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  .gif5 {
+    width: 150%;
+    max-width: 550px;
+    height: auto; 
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  .gif6 {
+    width: 150%;
+    max-width: 550px;
+    height: auto; 
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  .gif7 {
+    width: 150%;
+    max-width: 550px;
+    height: auto; 
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  .gif8 {
+    width: 180%;
+    max-width: 550px;
+    height: auto; 
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  .gif9 {
+    width: 150%;
+    max-width: 550px;
+    height: auto; 
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+
+  .scroll-down {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 35px;
+    color: #c2c2c2;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    left: 290px;
+    top: 840px;
+    z-index: 3;
+  
+  }
+  
+  .scroll-down:hover {
+    color: #816bc0; 
+  }
+
+}
+
+        
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            @keyframes fadeIn {
+              0% { opacity: 0; }
+              100% { opacity: 1; }
+            }
