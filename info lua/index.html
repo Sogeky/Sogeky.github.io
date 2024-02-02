@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/booking.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/index.html"><img src="imagens/logo.png" alt="" /></a>
+      </div>
+
+      <nav class="bigmenu">
+        <ul>
+          <li><a href="/Login e Register/Log in/Login.html">Account</a></li>
+          <li><a href="/booking.html">Booking</a></li>
+          <li><a href="/explore planets/index.html">Explore</a></li>
+          <li><a href="/aboutus.html">About Us</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+    </header>
+
+    <nav class="mobile-nav">
+      <a href="/Login e Register/Log in/Login.html">Account</a>
+      <a href="/booking.html">Booking</a>
+      <a href="/explore planets/index.html">Explore</a>
+      <a href="/aboutus.html">About Us</a>
+    </nav>
+    <p class="title">MOON</p>
+    <p class="title1">Destiny</p>
+    <video id="background-video" autoplay loop muted poster="imagens/fundo.mp4">
+      <source src="imagens/fundo.mp4" type="video/mp4" />
+    </video>
+    <img src="imagens/lua.gif" class="gif1" alt="" />
+    <div class="retangulo">
+      <img src="imagens/lua1.jpg" class="imagem1" alt="" />
+      <img src="imagens/lua2.png" class="imagem2" alt="" />
+      <img src="imagens/lua3.png" class="imagem3" alt="" />
+      <a href="/booking.html"
+        ><button
+          href="pagina-de-destino.html"
+          class="button"
+          style="vertical-align: middle"
+        >
+          <span>Book </span>
+        </button>
+      </a>
+    </div>
+    <div class="scroll-down">
+      <i class="fa-solid fa-angles-down"></i>
+      <div class="scroll-wrapper"></div>
+    </div>
+    <div class="retangulotexto1">
+      <p>
+        The Moon, Earth's only natural satellite, has been a silent companion in
+        the cosmos for around 4.5 billion years. Located at an average distance
+        of 238,855 miles, it graces our night sky with its gentle glow, courtesy
+        of reflected sunlight. The Moon's gravitational dance with Earth not
+        only creates the ebb and flow of tides but also stabilizes our planet's
+        axial tilt, influencing the rhythm of life on Earth. It has witnessed
+        the passage of time and, through human exploration, has become a symbol
+        of both mystery and scientific discovery.
+      </p>
+    </div>
+    <div class="retangulotexto2">
+      <p><strong>Position:</strong> Natural sattelite of Earth</p>
+      <p>
+        <strong>Location:</strong> Approximately 384,400 kms away from Earth
+      </p>
+      <p><strong>Size:</strong> Diameter of about 3,474 kilometers</p>
+      <p><strong>Atmosphere:</strong> none</p>
+    </div>
+    <footer>
+      <p>Sign up for Updates</p>
+
+      <div>
+        <input type="text" placeholder="Email" required />
+        <button type="submit" class="btn">Sign Up</button>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector(".scroll-down")
+        .addEventListener("click", function () {
+          window.scrollBy({
+            top: window.innerHeight,
+            behavior: "smooth",
+          });
+        });
+      window.onload = function () {
+        window.addEventListener("scroll", function (e) {
+          if (window.pageYOffset > 100) {
+            document.querySelector("header").classList.add("is-scrolling");
+          } else {
+            document.querySelector("header").classList.remove("is-scrolling");
+          }
+        });
+
+        const menu_btn = document.querySelector(".hamburger");
+        const mobile_menu = document.querySelector(".mobile-nav");
+
+        menu_btn.addEventListener("click", function () {
+          menu_btn.classList.toggle("is-active");
+          mobile_menu.classList.toggle("is-active");
+        });
+      };
+    </script>
+  </body>
+</html>

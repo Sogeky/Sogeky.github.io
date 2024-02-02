@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+html {
+  background: url(/Logos/Captura\ de\ ecrã\ 2023-12-27\ 210000.png) no-repeat;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(20px);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(Logo/Captura\ de\ ecrã\ 2023-12-27\ 210000.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(20px);
+}
+
+.box {
+  width: 500px;
+  background-color: rgb(24, 21, 41);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 0 40px 10px;
+}
+
+.box input {
+  height: 80%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.692);
+  border-radius: 50px;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
+
+.xbtn {
+  scale: 200%;
+  margin: 25px 0 0 415px;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.xbtn :hover {
+  animation-name: spin;
+  animation-duration: 0.5s;
+  animation-iteration-count: initial;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+
+header {
+  text-align: center;
+  scale: 80%;
+  margin-bottom: 25px;
+}
+
+.box .login {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+}
+.login p {
+  color: white;
+}
+.login p a {
+  color: rgb(236, 236, 236);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16;
+}
+
+.media {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 100px 0 50px;
+  scale: 180%;
+  color: white;
+}
+
+.container {
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.title {
+  width: 100%;
+  height: 45px;
+  position: relative;
+}
+.title::after,
+.title::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.603);
+  width: 45%;
+  top: 17%;
+}
+
+.title::after {
+  left: 0;
+}
+
+.title::before {
+  right: 0;
+}
+.word {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.603);
+  text-align: center;
+}
+
+.textbox0 {
+  height: 55px;
+  margin: 15px 10px;
+}
+
+.textbox1 {
+  height: 55px;
+  margin: 15px 10px;
+}
+
+.textbox2 {
+  height: 55px;
+  margin: 15px 0;
+  display: flex;
+}
+
+.textbox2 .space {
+  margin: 0 10px;
+}
+
+.textbox3 {
+  height: 55px;
+  margin: 15px 10px;
+}
+
+:root {
+  --primary: white;
+  color: white;
+}
+
+.select-box {
+  position: relative;
+  height: 55px;
+  display: flex;
+  justify-content: start;
+}
+
+.select-box input {
+  font-size: 80px;
+}
+
+.select-box input:focus {
+  border: 1.6px solid var(--primary);
+}
+
+.select-box .pnumb {
+  width: 315px;
+}
+.selected-option {
+  display: flex;
+}
+
+.selected-option div {
+  position: relative;
+
+  width: 96px;
+  padding: 0 44.8px 0 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.selected-option div::after {
+  position: absolute;
+  content: "";
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  margin-top: -5px;
+
+  width: 13px;
+  height: 13px;
+  border-right: 1.2px solid var(--primary);
+  border-bottom: 1.2px solid var(--primary);
+
+  transition: 0.1s;
+}
+
+.selected-option div.active::after {
+  transform: translateY(-50%) rotate(225deg);
+}
+
+.select-box .options {
+  position: absolute;
+  top: 64px;
+
+  width: 420px;
+  background-color: rgba(6, 6, 12, 0.993);
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+
+  display: none;
+}
+
+.select-box .options.active {
+  display: block;
+}
+
+.select-box .options::before {
+  position: absolute;
+  content: "";
+  left: 16px;
+  top: -19.2px;
+
+  width: 2px;
+  height: 0;
+  border: 9.6px solid transparent;
+  border-bottom-color: var(--primary);
+}
+
+input.search-box {
+  background-color: var(--primary);
+  padding: 22.4px 16px;
+}
+
+.select-box ol {
+  list-style: none;
+  max-height: 368px;
+  overflow: overlay;
+}
+
+.select-box ol::-webkit-scrollbar {
+  width: 9.6px;
+}
+
+.select-box ol::-webkit-scrollbar-thumb {
+  width: 6.4px;
+  height: 70px;
+  background-color: rgb(24, 21, 41);
+  border-radius: 6.4px;
+}
+
+.select-box ol li {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: rgba(6, 6, 12, 0.993);
+}
+
+.select-box ol li.hide {
+  display: none;
+}
+
+.select-box ol li:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.603);
+}
+
+.select-box ol li:hover {
+  background-color: rgb(24, 21, 41);
+}
+
+.select-box ol li .country-name {
+  margin-left: 6, 4px;
+}
+
+.textbox4 {
+  height: 55px;
+  margin: 15px 0 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textbox4 p {
+  color: white;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.textbox4 input[type="date"] {
+  color: white;
+  width: 330px;
+  margin: 0 10px 0 10px;
+}
+
+.box input {
+  width: 100%;
+  height: 80%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.692);
+  border-radius: 50px;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
+
+.box input::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.box .btn {
+  width: 100%;
+  height: 45px;
+  background: rgba(6, 6, 12, 0.993);
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(121, 121, 121, 0.2);
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+@media (max-width: 630px) {
+  .box {
+    width: 350px;
+    background-color: rgb(24, 21, 41);
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 0 40px 10px;
+  }
+  .xbtn {
+    margin: 20px 0 0 270px;
+  }
+  .media {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 235px;
+    margin: 50px 0 50px;
+    scale: 150%;
+    color: white;
+  }
+
+  .test {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box input {
+    width: 260px;
+    height: 45px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.692);
+    border-radius: 50px;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+  }
+
+  .textbox2 {
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .textbox2 .space {
+    margin: 0 0 15px;
+  }
+  .textbox2 .space2 {
+    margin: 25px 0 100px;
+  }
+
+  .textbox3 {
+    margin: 100px 0 15px;
+  }
+  .select-box {
+    margin: 15px 0 10px;
+  }
+  .select-box .pnumb {
+    width: 165px;
+    height: 45px;
+  }
+  .select-box .options {
+    width: 260px;
+  }
+
+  .textbox4 input[type="date"] {
+    color: white;
+    width: 330px;
+    margin: 0 10px 0 10px;
+  }
+}

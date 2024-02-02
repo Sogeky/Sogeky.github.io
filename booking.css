@@ -1,0 +1,814 @@
+body {
+  margin: 0;
+  background: url(/fotos/bcg3.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+header {
+  padding-top: 15px;
+  padding-left: 70px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.logo img {
+  max-height: 100px;
+  padding-left: 20px;
+}
+
+.bigmenu {
+  position: block;
+}
+.bigmenu ul {
+  list-style: none;
+  display: flex;
+}
+
+.bigmenu ul li {
+  margin-right: 60px;
+}
+
+.bigmenu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.hamburger {
+  position: absolute;
+  display: block;
+  width: 45px;
+  cursor: pointer;
+  margin-left: 74.5%;
+  margin-bottom: 20px;
+
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+
+  z-index: 2;
+}
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100svh;
+  display: block;
+  z-index: 98;
+  background-color: rgba(6, 6, 12, 0.959);
+  padding-top: 120px;
+  transition: 0.4s;
+
+  z-index: 1;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+.mobile-nav a {
+  display: block;
+  width: 100%;
+
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 12px 16px;
+
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+}
+
+.mobile-nav a:hover {
+  color: #816bc0;
+}
+/* Parte central */
+
+.travelword {
+  font-size: 30px;
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 100;
+  margin-top: 75px;
+  margin-left: 250px;
+  color: #ffffff;
+}
+
+.viagem {
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 10px;
+  padding-left: 300px;
+  align-items: center;
+}
+#pais {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  padding: 15px 20px;
+  font-size: 20px;
+  padding-left: 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(17, 17, 17, 0.8);
+  color: aliceblue;
+}
+
+.setas {
+  margin-left: 18px;
+}
+#planeta {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  margin-left: 20px;
+  padding: 15px 60px;
+  padding-left: 20px;
+  font-size: 20px;
+  text-align: left;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(17, 17, 17, 0.8);
+  color: aliceblue;
+}
+
+.datas {
+  margin-right: auto;
+  text-align: center;
+  display: inline-block;
+  margin-left: 30%;
+  padding: 25px 40px;
+  font-size: 25px;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(15, 15, 15, 0.9);
+}
+.teste1 {
+  display: flex;
+  align-items: center;
+}
+.teste2 {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+.cima {
+  margin-left: 12px;
+}
+.baixo {
+  margin-left: 12px;
+}
+#partida {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(57, 57, 57, 1);
+  color: #fff;
+}
+.calendario {
+  display: none;
+}
+#chegada {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(57, 57, 57, 1);
+  color: #fff;
+}
+
+.flyghtword {
+  font-size: 30px;
+  font-weight: 100;
+  font-family: "Zen Dots", sans-serif;
+  margin-top: 130px;
+  margin-left: 250px;
+  color: #ffffff;
+}
+
+.opçoes {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-left: 32%;
+  display: inline-block;
+  padding: 22px 100px 40px;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(15, 15, 15, 0.9);
+  color: #fff;
+}
+.par {
+  display: inline;
+  font-size: 26px;
+  margin-left: -40px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+.star {
+  display: inline;
+  font-size: 18px;
+  margin-left: 200px;
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 300;
+}
+.opc1 {
+  margin-top: 18px;
+  font-size: 21px;
+}
+
+.opc1 select {
+  background-image: url(/icons/arrow\ down.png);
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 1.3rem auto;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 40px;
+  display: inline-block;
+  padding: 10px 10px;
+  text-decoration: none;
+  appearance: none;
+  border: none;
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: rgba(66, 75, 90, 1);
+}
+.opc1 a {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(66, 75, 90, 1);
+  color: #ffffff;
+}
+.opc2 {
+  font-size: 21px;
+  margin-top: 30px;
+}
+
+.opc2 select {
+  background-image: url(/icons/arrow\ down.png);
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 1.3rem auto;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 40px;
+  display: inline-block;
+  padding: 10px 10px;
+  text-decoration: none;
+  appearance: none;
+  border: none;
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: rgba(66, 75, 90, 1);
+}
+
+.opc2 a {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(66, 75, 90, 1);
+  color: #fff;
+}
+i {
+  font-size: 19px;
+}
+@media (min-width: 950px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 1485px) {
+  body {
+    margin: 0;
+    background: url(/fotos/bcg3.jpg) no-repeat fixed;
+    background-position: -200px;
+    background-size: cover;
+  }
+  .datas {
+    margin-right: auto;
+    text-align: center;
+    display: inline-block;
+    margin-left: 13%;
+    padding: 25px 40px;
+    font-size: 25px;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+  }
+}
+@media (max-width: 1345px) {
+  body {
+    margin: 0;
+    background: url(/fotos/bcg3.jpg) no-repeat fixed;
+    background-position: -380px;
+    background-size: cover;
+  }
+  .viagem {
+    display: grid;
+    padding: 40px 0px;
+    font-size: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(17, 17, 17, 0.8);
+    color: aliceblue;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #pais {
+    margin-left: -280px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    padding: 15px 20px;
+    font-size: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(233, 233, 233, 0.884);
+    color: rgb(0, 0, 0);
+  }
+
+  .setas {
+    margin-left: 25px;
+    margin-top: -50px;
+  }
+  #planeta {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    padding: 15px 60px;
+    padding-left: 20px;
+    margin-left: 260px;
+    margin-top: -55px;
+    font-size: 20px;
+    text-align: left;
+    background-color: rgba(233, 233, 233, 0.884);
+    color: rgb(0, 0, 0);
+  }
+
+  .datas {
+    margin-left: 80px;
+    margin-top: 60px;
+    padding: 25px 40px;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  #partida {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.884);
+    color: #000000;
+  }
+  .calendario {
+    display: none;
+  }
+  #chegada {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.884);
+    color: #000000;
+  }
+  .opçoes {
+    margin-left: 0px;
+    display: grid;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    margin-top: 0px;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(15, 15, 15, 0.9);
+    border-radius: 0%;
+    color: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .star {
+    display: inline;
+    font-size: 18px;
+    margin-left: 261px;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 300;
+  }
+  .par {
+    margin-bottom: -42px;
+    display: inline;
+    font-size: 26px;
+    margin-left: -0px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+  }
+  .travelword {
+    display: flex;
+    justify-content: center;
+    margin-right: 230px;
+  }
+  .flyghtword {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    margin-right: 230px;
+  }
+}
+@media (max-width: 950px) {
+  body {
+    margin: 0;
+    background: url(/fotos/bcg3.jpg) no-repeat fixed;
+    background-position: -495px;
+    background-size: cover;
+  }
+  .viagem {
+    display: grid;
+    padding: 40px 0px;
+    font-size: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(17, 17, 17, 0.8);
+    color: aliceblue;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #pais {
+    margin-left: -280px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    padding: 15px 20px;
+    font-size: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(233, 233, 233, 0.884);
+    color: rgb(0, 0, 0);
+  }
+
+  .setas {
+    margin-left: 25px;
+    margin-top: -50px;
+  }
+  #planeta {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    padding: 15px 60px;
+    padding-left: 20px;
+    margin-left: 260px;
+    margin-top: -55px;
+    font-size: 20px;
+    text-align: left;
+    background-color: rgba(233, 233, 233, 0.884);
+    color: rgb(0, 0, 0);
+  }
+
+  .datas {
+    margin-left: 80px;
+    margin-top: 60px;
+    padding: 25px 40px;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  #partida {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.884);
+    color: #000000;
+  }
+  .calendario {
+    display: none;
+  }
+  #chegada {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.884);
+    color: #000000;
+  }
+  .opçoes {
+    margin-left: 0px;
+    display: grid;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    margin-top: 0px;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(15, 15, 15, 0.9);
+    border-radius: 0%;
+    color: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .star {
+    display: inline;
+    font-size: 18px;
+    margin-left: 261px;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 300;
+  }
+  .par {
+    margin-bottom: -42px;
+    display: inline;
+    font-size: 26px;
+    margin-left: -0px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+  }
+  .travelword {
+    display: flex;
+    justify-content: center;
+    margin-right: 230px;
+  }
+  .flyghtword {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    margin-right: 230px;
+  }
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  nav a {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+  }
+  .logo img {
+    max-height: 100px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 700px) {
+  body {
+    margin: 0;
+    background: url(/fotos/bcg3.jpg) no-repeat fixed;
+    background-position: -660px;
+    background-size: cover;
+  }
+  .hamburger {
+    position: absolute;
+    display: block;
+    width: 45px;
+    cursor: pointer;
+    margin-left: 80%;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+
+    z-index: 2;
+  }
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100svh;
+    display: block;
+    z-index: 98;
+    background-color: rgba(6, 6, 12, 0.959);
+    padding-top: 120px;
+    transition: 0.4s;
+
+    z-index: 1;
+  }
+  .viagem {
+    scale: 80%;
+    display: grid;
+    padding: 40px 0px;
+    font-size: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(73, 73, 73, 0);
+    color: aliceblue;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #pais {
+    margin-left: -280px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    padding: 15px 20px;
+    font-size: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(233, 233, 233, 0.884);
+    color: rgb(0, 0, 0);
+  }
+
+  .setas {
+    margin-left: 25px;
+    margin-top: -50px;
+  }
+  #planeta {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    padding: 15px 60px;
+    padding-left: 20px;
+    margin-left: 260px;
+    margin-top: -55px;
+    font-size: 20px;
+    text-align: left;
+    background-color: rgba(233, 233, 233, 0.884);
+    color: rgb(0, 0, 0);
+  }
+
+  .datas {
+    margin-left: 80px;
+    margin-top: 60px;
+    padding: 25px 40px;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  #partida {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.884);
+    color: #000000;
+  }
+  .calendario {
+    display: none;
+  }
+  #chegada {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.884);
+    color: #000000;
+  }
+  .opçoes {
+    scale: 80%;
+    margin-right: -50px;
+    display: grid;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    margin-top: -30px;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(15, 15, 15, 0);
+    border-radius: 0%;
+    color: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .star {
+    display: inline;
+    font-size: 18px;
+    margin-left: 261px;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 300;
+  }
+  .par {
+    margin-bottom: -42px;
+    display: inline;
+    font-size: 26px;
+    margin-left: -0px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+  }
+  .travelword {
+    scale: 80%;
+    display: flex;
+    justify-content: center;
+    margin-right: 230px;
+  }
+  .flyghtword {
+    scale: 80%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    margin-right: 230px;
+  }
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  nav a {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+  }
+  .logo img {
+    max-height: 100px;
+    padding-left: 20px;
+  }
+}

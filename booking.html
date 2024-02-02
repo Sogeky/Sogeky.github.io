@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="SHORTCUT ICON" href="Logos/Prancheta 1_2.png" />
+    <link rel="stylesheet" href="/booking.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/booking.js"></script>
+    <title>Booking</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/index.html"><img src="Logos/W1.png" alt="" /></a>
+      </div>
+
+      <nav class="bigmenu">
+        <ul>
+          <li><a href="/Login e Register/Log in/Login.html">Account</a></li>
+          <li><a href="/booking.html">Booking</a></li>
+          <li><a href="/explore planets/index.html">Explore</a></li>
+          <li><a href="/aboutus.html">About Us</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+    </header>
+
+    <nav class="mobile-nav">
+      <a href="/Login e Register/Log in/Login.html">Account</a>
+      <a href="/booking.html">Booking</a>
+      <a href="/explore planets/index.html">Explore</a>
+      <a href="/aboutus.html">About Us</a>
+    </nav>
+
+    <main>
+      <h2 class="travelword">Travel</h2>
+      <div class="viagem">
+        <select id="pais" name="país">
+          <option value="norAme">North America</option>
+          <option value="eurW">Europe West</option>
+          <option value="eurNE">Europe Nordic & East</option>
+          <option value="oce">Oceania</option>
+          <option value="rus">Russia</option>
+          <option value="bra">Brazil</option>
+          <option value="jap">Japan</option>
+          <option value="lAS">Latin America South</option>
+          <option value="lAN">Latin America North</option>
+        </select>
+        <img class="setas" src="/icons/stas.png" alt="" />
+        <select id="planeta" name="planetas">
+          <option value="mercurio">Marcurio</option>
+          <option value="venus">Venus</option>
+          <option value="marte">Marte</option>
+          <option value="jupiter">Jupiter</option>
+          <option value="saturno">Saturno</option>
+          <option value="urano">Urano</option>
+          <option value="neptuno">Neptuno</option>
+        </select>
+        <div class="datas">
+          <div class="teste1">
+            <input type="date" id="partida" name="partida" />
+            <img class="cima" src="/icons/navecima.png" alt="" />
+          </div>
+          <img class="calendario" src="/icons/calendario.png" alt="" />
+          <div class="teste2">
+            <input type="date" id="chegada" name="chegada" />
+            <img class="baixo" src="/icons/navebaixo.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <h2 class="flyghtword">Available Flights</h2>
+
+      <div class="opçoes">
+        <h3 class="par">Partidas:</h3>
+        <h3 class="star">starship</h3>
+        <div class="opc1">
+          17:40 --- <i>5 Days</i> --- 15:30
+          <select name="starship" id="nave">
+            <option value="walle">Wall-E</option>
+            <option value="mogly">Mogly</option>
+            <option value="evangelion">Evangelion</option>
+            <option value="falcon">M. Falcon</option>
+            <option value="pathfinder">Pathfinder</option>
+          </select>
+          <a href="/resume.html">SELECT</a>
+        </div>
+        <div class="opc2">
+          17:40 --- <i>5 Days</i> --- 15:30
+          <select name="starship" id="nave">
+            <option value="walle">Wall-E</option>
+            <option value="mogly">Mogly</option>
+            <option value="evangelion">Evangelion</option>
+            <option value="falcon">M. Falcon</option>
+            <option value="pathfinder">Pathfinder</option>
+          </select>
+          <a href="/resume.html">SELECT</a>
+        </div>
+      </div>
+    </main>
+    <script>
+      window.onload = function () {
+        window.addEventListener("scroll", function (e) {
+          if (window.pageYOffset > 100) {
+            document.querySelector("header").classList.add("is-scrolling");
+          } else {
+            document.querySelector("header").classList.remove("is-scrolling");
+          }
+        });
+
+        const menu_btn = document.querySelector(".hamburger");
+        const mobile_menu = document.querySelector(".mobile-nav");
+
+        menu_btn.addEventListener("click", function () {
+          menu_btn.classList.toggle("is-active");
+          mobile_menu.classList.toggle("is-active");
+        });
+      };
+    </script>
+  </body>
+</html>
